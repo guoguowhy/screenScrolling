@@ -1,0 +1,48 @@
+/* sectionWrap start */
+body{
+	overflow: hidden;
+}
+li{
+	list-style: none;
+}
+.page-wrap{
+	width: 100%;
+	height:100%;
+	transform: translateY(0%);
+	-moz-transform: translateY(0%);
+	-webkit-transform: translateY(0%);
+	-o-transform: translateY(0%);
+}
+.page-wrap .page{
+	width: 100%;
+	height:100%;
+	overflow: hidden;
+}
+.page-wrap .page-animate{
+	transition: all 1s cubic-bezier(0.86, 0, 0.03, 1);
+    -moz-transition: all 1s cubic-bezier(0.86, 0, 0.03, 1);
+    -webkit-transition: all 1s cubic-bezier(0.86, 0, 0.03, 1);
+    -o-transition: all 1s cubic-bezier(0.86, 0, 0.03, 1);
+}
+.page-wrap .serial{
+	position: absolute;
+	right: 5%;
+	top: 45%;
+}
+.page-wrap .serial li a{
+	display: block;
+	width: 15px;
+	height: 15px;
+	margin: 5px;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, .5);
+	background-color: rgba(255, 255, 255, .8);
+}
+.page-wrap .serial li a:hover{
+    background-color: rgba(0, 0, 0, .5);
+    border: 1px solid rgba(255, 255, 255, .8);
+}
+.page-wrap .serial li.curr a{
+	background-color:rgba(138, 146, 239,.6);
+}
+/* sectionWrap end */
